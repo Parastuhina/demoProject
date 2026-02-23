@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 
-import "screens/simple_bite_splash_screen.dart";
+import "screens/onboarding/activity_level_screen.dart";
 import "theme/app_theme.dart";
 import "utils/app_constants.dart";
 
@@ -13,7 +13,7 @@ void main() {
 ///
 /// Integration note:
 /// - If you're plugging this into an existing app, set
-///   `home: const SimpleBiteSplashScreen()` on your root MaterialApp
+///   `home: const ActivityLevelScreen()` on your root MaterialApp
 ///   or register the screen in your route table.
 class SimpleBiteApp extends StatelessWidget {
   const SimpleBiteApp({super.key});
@@ -24,7 +24,7 @@ class SimpleBiteApp extends StatelessWidget {
       title: AppStrings.appName,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const SimpleBiteSplashScreen(),
+      home: const ActivityLevelScreen(),
     );
   }
 }

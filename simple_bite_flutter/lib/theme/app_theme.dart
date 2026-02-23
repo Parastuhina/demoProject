@@ -10,11 +10,13 @@ class AppTheme {
   static ThemeData get light => ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
-        scaffoldBackgroundColor: AppColors.scaffoldBackground,
+        scaffoldBackgroundColor: AppColors.onboardingScaffold,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: AppColors.iconGreen,
+          seedColor: AppColors.buttonPrimary,
           brightness: Brightness.light,
-          surface: AppColors.scaffoldBackground,
+          surface: AppColors.onboardingScaffold,
+          primary: AppColors.buttonPrimary,
+          onPrimary: Colors.white,
         ),
         textTheme: TextTheme(
           headlineMedium: AppTextStyles.wordmark(AppConstants.wordmarkFontSize)
